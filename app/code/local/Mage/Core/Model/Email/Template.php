@@ -403,10 +403,10 @@ class Mage_Core_Model_Email_Template extends Mage_Core_Model_Email_Template_Abst
                 $returnPathEmail = null;
                 break;
         }
-
-        //if ($this->hasQueue() && $this->getQueue() instanceof Mage_Core_Model_Email_Queue) {
-        //if (!($this->hasQueue() && $this->getQueue() instanceof Mage_Core_Model_Email_Queue)) {
-        if (false) {
+		/* Updated Code here */ 
+        //if ($this->hasQueue() && $this->getQueue() instanceof Mage_Core_Model_Email_Queue) { /* Comment this line */
+        
+        if (false) { /* add this line */
             /** @var $emailQueue Mage_Core_Model_Email_Queue */
             $emailQueue = $this->getQueue();
             $emailQueue->setMessageBody($text);
