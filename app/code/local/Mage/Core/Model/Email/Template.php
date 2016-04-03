@@ -405,7 +405,6 @@ class Mage_Core_Model_Email_Template extends Mage_Core_Model_Email_Template_Abst
         }
 		/* Updated Code here */ 
         //if ($this->hasQueue() && $this->getQueue() instanceof Mage_Core_Model_Email_Queue) { /* Comment this line */
-        
         if (false) { /* add this line */
             /** @var $emailQueue Mage_Core_Model_Email_Queue */
             $emailQueue = $this->getQueue();
